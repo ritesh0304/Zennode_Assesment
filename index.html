@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    h2{
+       text-align: center; 
+       color: rgb(43, 43, 58);
+    }
+    #container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* width: 30%; */
+    }
+    table,td,th{
+        border:2px solid black;
+        border-collapse:collapse;
+    }
+    td,th{
+        padding: 15px;
+    }
+    
+    #Answer{
+        margin-top: 20px;
+        display: flex;
+        justify-content:space-evenly
+    }
+</style>
+<body>
+     <h1 style="text-align: center;"><img src="logo-zennode.png" alt=""></h1>
+     <h2>Junior Software Developer</h2>
+     <h2>Assesment</h2>
+
+     
+     <div id="container">
+        <h2>Below is the catalouge with 3 Products</h2>
+        <table>
+                <tr>
+                    <th>Product Name</th>
+                    <th>Price</th>
+                </tr>
+                <tr>
+                    <td>Product A</td>
+                    <td>$20</td>
+                </tr>
+                <tr>
+                    <td>Product B</td>
+                    <td>$40</td>
+                </tr>
+                <tr>
+                    <td>Product A</td>
+                    <td>$50</td>
+                </tr>
+        </table>
+     </div>
+     
+     <!-- <h2>Output</h2> -->
+     <div id="Answer">
+        <div id="box1">
+          <table>
+            <tr>
+                <th>Product Name</th>
+                <th>Quantity</th>
+                <th>Total Amount</th>
+            </tr>
+            <tr>
+                <td>Product A</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Product B</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Product C</td>
+                <td></td>
+                <td></td>
+            </tr>
+          </table>
+        </div>
+        <div id="box2">
+         <table>
+            <tr>
+                <td>Subtotal:</td>
+                <td id="subtotal">$20</td>
+            </tr>
+            <tr>
+                <td>Discount Applied:</td>
+                <td id="discount">$20</td>
+            </tr>
+            <tr>
+                <td>Shipping Fee</td>
+                <td id="shipping">$40</td>
+            </tr>
+            <tr>
+                <td>Gift Wrap Fee</td>
+                <td id="gift">$50</td>
+            </tr>
+            <tr>
+                <td>Total</td>
+                <td id="total">$50</td>
+            </tr>
+          </table>
+       </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
